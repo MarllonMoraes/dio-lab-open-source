@@ -1,0 +1,20 @@
+classDiagram
+    Cliente <|-- Conta
+    
+    Cliente
+    ----
+    - nome: string
+    - cpf: string
+    - contas: list[Conta]
+    ----
+    + criar_conta(conta: Conta)
+    
+    Conta
+    ----
+    - numero: int
+    - saldo: float
+    - extrato: list[string]
+    ----
+    + depositar(valor: float)
+    + sacar(valor: float)
+    + exibir_extrato()
