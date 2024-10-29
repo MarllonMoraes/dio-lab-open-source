@@ -1,0 +1,1 @@
+from .filters import *  # Importa todas as funções de filters.py
